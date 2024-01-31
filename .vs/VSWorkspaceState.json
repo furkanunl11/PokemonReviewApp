@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Migrations"
   ],
-  "SelectedNode": "\\PokemonReviewApp.sln",
+  "SelectedNode": "\\Migrations\\20240121211248_InitialCreate.cs",
   "PreviewInSolutionExplorer": false
 }
