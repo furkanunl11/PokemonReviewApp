@@ -8,10 +8,10 @@ namespace PokemonReviewApp.Repository
     public class PokemonRepository : IPokemonRepository
     {
         private readonly DataContext _context;
-        public PokemonRepository(DataContext context)
-        { 
-            _context = context;
 
+        public PokemonRepository(DataContext context)
+        {
+            _context = context;
         }
 
         public bool CreatePokemon(int ownerId, int categoryId, Pokemon pokemon)
@@ -74,7 +74,7 @@ namespace PokemonReviewApp.Repository
         public Pokemon GetPokemonTrimToUpper(PokemonDto pokemonCreate)
         {
             return GetPokemons().Where(c => c.Name.Trim().ToUpper() == pokemonCreate.Name.TrimEnd().ToUpper())
-                            .FirstOrDefault();
+                .FirstOrDefault();
         }
 
         public bool PokemonExists(int pokeId)
